@@ -15,7 +15,7 @@ public class MathEtoETest {
 
     @Test
     public void testApiEndpoint() {
-        String url = "http://localhost:" + port + "/api/endpoint";
+        String url = "http://localhost:" + port + "/api/doMath";
         String response = restTemplate.getForObject(url, String.class);
 
         assertEquals("Expected Response", response);
